@@ -1,0 +1,7 @@
+<h3>Configuration Options</h3>
+<ng-template #mentionListTemplate let-item="item">
+    {{item.label}} <strong>({{item.username}})</strong>
+  </ng-template>
+<p>Example showing how complex items (an array of objects) and configuration options can be used. The tigger character is #.</p>
+<input [mention]="complexItems" class="form-control" type="text"
+       [mentionConfig]="{triggerChar:'@',maxItems:10,labelKey:'name',mentionSelect:format}">
