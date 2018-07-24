@@ -20,3 +20,28 @@ var arr = [1,2,3];
 var bound = addToThis.bind(obj);
 
 console.log(bound(1,2,3));
+
+
+
+
+// general way
+
+var obj = {
+    num:2
+};
+
+var functionName = function(arg1,arg2,arg3){
+
+};
+
+functionName.call(obj,arg1,arg2,arg3);// call function
+functionName.apply(obj,[arg1,arg2,arg3]);// apply function
+
+var bound = functionName(obj);
+
+bound(arg1,arg2,arg3);
+
+//end
+
+
+
