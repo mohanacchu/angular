@@ -1,2 +1,2 @@
 # angular
-angular front end
+Learning curve of call,Apply and bind
